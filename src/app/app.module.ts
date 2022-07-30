@@ -7,7 +7,7 @@ import {ContentrightComponent} from "./axame/contentright.component";
 import {RouterModule, Routes} from "@angular/router";
 
 const appRoutes: Routes = [
-  {path: 'about-us', component: ContentrightComponent},
+  {path: 'content', component: ContentrightComponent},
 ];
 @NgModule({
   declarations: [
