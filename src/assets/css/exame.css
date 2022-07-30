@@ -4,6 +4,12 @@
   background-color: #eeecec;
   font-family: sans-serif;
 }
+.content-right{
+  float: right;
+  width: 70%;
+  background-color: white;
+  font-family: sans-serif;
+}
 .recipe-filter-container .filter-header{
   display: flex;
   align-items: center;
