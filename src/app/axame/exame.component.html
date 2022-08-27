@@ -1,41 +1,27 @@
 <section class="section">
   <div class="container">
     <div class="content-container">
-      <div class="content-left">
-        <div class="filter-container">
-          <div class="filter-header accordion">
-            <div class="filter-title" >Favorites</div>
-            <div class="accordion-arrow">
-              <i onclick="show_Type()" class="fa-solid fa-angle-down"></i>
-            </div>
-          </div>
-          <div class="accordion-content">
-            <div class="accordion-content-container">
-              <label><a class="filter-item" >Inbox</a></label>
-              <label><a class="filter-item">Sent items</a></label>
-            </div>
-          </div>
+      <div class="filter-nav accordion">
+        <div class="filter-li">
+          <a routerLink="/content">Rome</a>
+          <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="filter-container">
-          <div class="filter-header accordion">
-            <div class="filter-title" >John</div>
-            <div class="accordion-arrow">
-              <i onclick="show_Type()" class="fa-solid fa-angle-down"></i>
-            </div>
-          </div>
-          <div class="accordion-content">
-            <div class="accordion-content-container">
-              <label><a class="filter-item" >Inbox</a></label>
-              <label><a class="filter-item" >Drafts</a></label>
-              <label><a class="filter-item" >Deleted items</a></label>
-              <label><a class="filter-item">Sent items</a></label>
-              <label><a class="filter-item">Outbox</a></label>
-            </div>
-          </div>
+        <div class="filter-li">
+          <a routerLink="/content">Paris</a>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="filter-li">
+          <a routerLink="/content">London</a>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="accordion-content">
+        <div class="filter-nav accordion-content-container ">
+
         </div>
       </div>
       <div class="content-right col-9">
-        <app-contentright></app-contentright>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
